@@ -1,0 +1,341 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/tierra5.jpg','imagenes/tierra6.jpg','imagenes/nelson2.jpeg','imagenes/tierra1.jpg','imagenes/images (9).jpg')">
+<div data-role="page" id="Principal" data-them="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1> Dia De La Tierra </h1>
+</div>
+<div data-role="main" class="ui-content">
+  <div><center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/tierra6.jpg',1)"><img src="imagenes/tierra2.jpg" width="372" height="204" id="Image7"></a></center></div>
+</div>
+  
+<div>
+  <ul data-role="listview" data-theme="" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> ¿Por que se celebra? </h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Medidas para cuidar el medio ambiente.</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Cambio Climático.</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Tipos de contaminación</h2>
+  </a>
+  </li>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Beneficios de cuidar el ambiente</h2>
+  </a>
+  </li>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Problemas de mi comunidad</h2>
+  </a>
+  </li>
+     </a>
+  </li>
+   </div>
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <h4>App 5 
+  <br>
+  <br> Actual Hernández Lizbeth</h4>
+  <h4></h4>
+  </div>
+</div>
+  </div>
+  
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"
+  <h1> EL dia de la tierra</h1>
+</div>
+<div data-role="content" align="center">
+  <div>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> ¿Para que? </h1>
+  <div>
+  <p> Se instauró este día para crear una conciencia común a los problemas de la super población, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</p>
+  <br>
+  </div>
+  <div>
+  <img src="imagenes/tierra1.jpg" width="250px" height="150px"></div>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> ¿Quien fue el que promovio este dia? </h1>
+  <div>
+  <p>El promotor de este dia fue el senador estadounidense Gaylord Nelson.
+  <br>Nelson fue elegido como senador por el Estado de Wisconsin en 1948. Diez años después fue elegido como el gobernador nº 35 de Wisconsin; era el primer demócrata que ocupaba ese puesto en 25 años. En 1962, fue elegido para el Senado de EEUU, en el que permaneció del 8 de enero de 1963 al 3 de enero de 1981.
+
+Nelson fue siempre un apasionado del medio ambiente. En 1963 viajó en el Conservation Tour con el Presidente John F. Kennedy y fue el principal promotor del Día de la Tierra, cuya primera celebración tuvo lugar en 1970.</p>
+  <br>
+  </div>
+  <div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/nelson2.jpeg',1)"><img src="imagenes/nelson.jpg" width="255" height="270" id="Image3"></a></div>
+  </div>
+  <div>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> ¿Cual es su misión? </h1>
+  <div>
+  <p>El Día está organizado por la Earth Day Network Disponible en inglés, cuaya misión consiste en ampliar y diversificar el movimiento ambiental en todo el mundo y movilizarlo eficazmente para construir un medio ambiente saludable y sostenible, hacer frente al cambio climático, y proteger la Tierra para las generaciones futuras. </p>
+  <br>
+  </div>
+  <div> <img src="imagenes/images (14).jpg" width="250px" height="150px"></div>
+  </div>
+  <br>
+  <br>
+  <br>
+<div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/tierra5.jpg',1)"><img src="imagenes/tierra4.jpg" width="369" height="230" id="Image10"></a></div>
+  </div>
+  </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>App 5 <br>
+    <br>
+Actual Hernández Lizbeth</h4>
+  <h4></h4>
+</div>
+  </div>
+  </div>
+  
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"
+  <h1> Medidas del cuidado del ambiente </h1>
+</div>
+<div data-role="content" align="center">
+  <div>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> Regla de las 3R </h1>
+  <div>
+  <p><img src="imagenes/regla.jpg" width="371" height="197"></p>
+  <p>Es una propuesta sobre habitos de consumo popularizada por la organización ecologista Greenpeace que pretende desarrollar hábitos como el consumo responsable. Este concepto hacen referencia a estrategias para el manejo de residuos que buscan ser mas sustentables con el medio ambiente y especificamente dar prioridad a la reducci+ón en el volumen de residuos generados.</p>
+  <h3><em>Las tres erres son:</em></h3>
+  <h3><strong>1. Reducir</strong></h3>
+  <h3><strong>2. Reutilizar</strong></h3>
+  <h3><strong>Reciclar</strong></h3>
+  
+  <iframe width="80%" height="80%" src="https://www.youtube.com/embed/67r_h78CeRc" frameborder="0" allowfullscreen></iframe>
+  </div>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> Otras medidas </h1>
+  <div>
+  <p> 1.-   Usa el transporte público. Los viajes en coche suponen la mitad de las emisiones totales de CO2 procedentes del sector del transporte y la mayor parte se genera en los viajes de casa al trabajo o a la escuela, y viceversa. </p>
+ <p>2.-  Productos con certificación ecológica. La garantía de que un producto sea de “producción ecológica” nos informa de que nos llevamos a casa comida sana.
+ <p>3.- Consume alimentos de temporada. Ahora en los supermercados se abastecen de productos traídos desde lejos. Esto requiere grandes cantidades de energía producirlos. </p>
+<p>5.-Apaga la luz. Las habitaciones que no se utilizan deberían permanecer a oscuras. Y se deben sustituir las bombillas de toda la casa por unas de bajo consumo. </p>
+<p>6.-Usa el lavavajillas en lugar de lavar los platos a mano. Existe un electrodoméstico que reduce realmente nuestro consumo energético a la vez que nos hace la vida más fácil que es el lavavajillas.</p>
+<p>7.-Recicla. El reciclaje es una de las maneras más fáciles de combatir el Calentamiento Global, ya que evitamos generar mayor contaminación. Los vertidos de plásticos llegan a los océanos destruyendo la vida marina.</p>
+<p>8.-Compost. ¡Devuelve tu basura orgánica a donde pertenece, a la tierra!</p>
+<p>9.-Menos plásticos. El plástico es ligero, resistente, impermeable, flexible, barato… Pero el excesivo uso de los mimos provoca contaminación en nuestras ciudades, ríos, lagos y mares. </p>
+<p>10.-Plantar árboles en su jardín y la comunidad.Todo el mundo sabe que laplantación de árboles puede ayudar al medio ambiente</p>
+<p>&nbsp;</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/tierra1.jpg',1)"><img src="imagenes/tierra7.jpg" width="299" height="228" id="Image4"></a></p>
+
+  </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>App 5 <br>
+   <br>
+Actual Hernández Lizbeth</h4>
+ <h4></h4>
+ </div>
+</div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Cambio climatico</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <p> Es un cambio significativo y 
+duratrero de los patrones locales o globales del clima, las causas pueden ser naturales, 
+como por ejemplo, variaciones en la energia que se recibe del Sol, erupciones volcanicas, 
+circulación oceánica, procesos biologicosn y otros, o puede ser causada por influencia antrópica
+(por las actividades humnanas), 
+como por ejemplo a travez de la emisión de CO2 y otros gases que atrapan calor</p>
+ <p>&nbsp;</p>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/images (9).jpg',1)"><img src="imagenes/images (7).jpg" width="392" height="193" id="Image5"></a></p>
+
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>App 5 <br>
+   <br>
+Actual Hernández Lizbeth</h4>
+ <h4></h4>
+ </div>
+</div>
+ </div>
+
+ 
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"
+  <h1> tipos de contaminación </h1>
+</div>
+<div data-role="content" align="center">
+  <div>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> de agua </h1>
+  <div>
+  <p> Es el tipo de contaminación que supone la contaminación de distintos cuerpos de agua. Varias criaturas de agua dependen de estos cuerpos de agua y sus caracteristicas naturales nutritivos para apoyar su vida.</p>
+  <p> <img src="imagenes/images (11).jpg" width="200px" height="100px"></p>
+  <br>
+  </div>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> de suelo </h1>
+  <div>
+  <p><img src="imagenes/images (13).jpg" width="200px" height="100px"></p>
+  <br>
+  </div>
+  <div>
+  </div>
+  </div>
+  <div>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> acustica </h1>
+  <div>
+  <p><img src="imagenes/images (12).jpg" width="200px" height="100px"> </p>
+  <br>
+  </div>
+  </div>
+  </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>App 5 <br>
+    <br>
+Actual Hernández Lizbeth</h4>
+  <h4></h4>
+</div>
+  </div>
+  </div>
+  
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Beneficios de cuidar</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <p> Hay muchos beneficios en cuidar el ambiente, como por ejemplo ahorrar la energia o dejar de contaminar.</p>
+ <ur>
+ <li> Ahorrar energia</li>
+ <li> Reducir la contamniación del aire</li>
+ <li> Reducir la contaminación del ambiente</li>
+ <li> Ayudar a vivir en un ambiente mas limpio y sano</li>
+ <li> Un mundo mejor para todos </li>
+ </ul>
+ <p> <img src="imagenes/tierra5.jpg" width="268" height="139"></p>
+ </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>App 5 <br>
+   <br>
+Actual Hernández Lizbeth</h4>
+ <h4></h4>
+ </div>
+</div>
+ </div>
+ 
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Problemas de mi comunidad</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:260px;height:100px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+<p>Algunas de las posibles soluciones podrian ser:</p>
+<p> Tener una platica con los habitantes de la comunidad acerca de los problemas surgidos</p>
+<p> LLevar acabo campañas sobre la contaminación</p>
+<p> apoyar en lo que se pueda</p>
+<p> poner botes de basura </p>
+<p> Establecer horarios para el carro de basura</p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>App 5 <br>
+   <br>
+Actual Hernández Lizbeth</h4>
+ <h4></h4>
+ </div>
+</div>
+  </div>
+</body>
+ </html>
